@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="47.745">
+    <testcase classname="Sauce Labs test case validations" name="verify items in dashboard are sorted from A - Z" time="8.107">
+        <system-out><![CDATA[Given navigate to site url..................................................passed
+And enter "standard_user" into email field and "secret_sauce" into password field.passed
+When click on login submit..................................................passed
+Then validate the items are in "Name (A to Z)" sorted order.................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sauce Labs test case validations" name="verify items in dashboard, are sorted from &quot;Price (low to high)&quot;" time="8.542">
+        <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=101.0.4951.41)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'clix-Inspiron-7560', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-40-generic', java.version: '17.0.3'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [b030b948acc12a277e43a5b977f4bd2a, getElementText {id=3d249b8b-2ce6-4046-abcf-927b55de003e}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.41, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /tmp/.com.google.Chrome.VRP4dI}, goog:chromeOptions: {debuggerAddress: localhost:43143}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43143/devtoo..., se:cdpVersion: 101.0.4951.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on LINUX (b030b948acc12a277e43a5b977f4bd2a)] -&gt; css selector: div#header_container &gt; div:nth-Child(2) &gt; div:nth-Child(3) &gt; span &gt; select &gt; option]&#10;Session ID: b030b948acc12a277e43a5b977f4bd2a" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[Given navigate to site url..................................................passed
+And enter "standard_user" into email field and "secret_sauce" into password field.passed
+When click on login submit..................................................passed
+Then validate the items are sorted from "Price (low to high)"...............failed
+
+StackTrace:
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.41)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'clix-Inspiron-7560', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-40-generic', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b030b948acc12a277e43a5b977f4bd2a, getElementText {id=3d249b8b-2ce6-4046-abcf-927b55de003e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.41, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /tmp/.com.google.Chrome.VRP4dI}, goog:chromeOptions: {debuggerAddress: localhost:43143}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43143/devtoo..., se:cdpVersion: 101.0.4951.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (b030b948acc12a277e43a5b977f4bd2a)] -> css selector: div#header_container > div:nth-Child(2) > div:nth-Child(3) > span > select > option]
+Session ID: b030b948acc12a277e43a5b977f4bd2a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:201)
+	at StepDefinitions.StepDefinitions.validate_the_items_are_sorted_from_Price_low_to_high(StepDefinitions.java:152)
+	at ✽.validate the items are sorted from "Price (low to high)"(file:///home/clix/Desktop/swagLabs/SauceLabs/Features/Dashboard_Sorting_Items.feature:17)
+]]></failure>
+    </testcase>
+    <testcase classname="Sauce Labs test case validations" name="verify when user tries to login with only password, should prompt to enter username" time="3.152">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=101.0.4951.41)&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'clix-Inspiron-7560', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-40-generic', java.version: '17.0.3'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c703daa355b3adbf966f465ebb6ef941, maximizeCurrentWindow {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.41, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /tmp/.com.google.Chrome.cMBI2X}, goog:chromeOptions: {debuggerAddress: localhost:42697}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42697/devtoo..., se:cdpVersion: 101.0.4951.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c703daa355b3adbf966f465ebb6ef941" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[Given navigate to site url..................................................failed
+And enter "test2" into password field.......................................skipped
+Then click on login submit..................................................skipped
+Then should prompt "Epic sadface: Username is required" as alert............skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.41)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'clix-Inspiron-7560', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-40-generic', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c703daa355b3adbf966f465ebb6ef941, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.41, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /tmp/.com.google.Chrome.cMBI2X}, goog:chromeOptions: {debuggerAddress: localhost:42697}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42697/devtoo..., se:cdpVersion: 101.0.4951.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c703daa355b3adbf966f465ebb6ef941
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:993)
+	at StepDefinitions.StepDefinitions.navigate_to_site_url(StepDefinitions.java:33)
+	at ✽.navigate to site url(file:///home/clix/Desktop/swagLabs/SauceLabs/Features/Login.feature:9)
+]]></failure>
+    </testcase>
+    <testcase classname="Sauce Labs test case validations" name="verify when user tries to login with only username, should prompt to enter password" time="5.003">
+        <system-out><![CDATA[Given navigate to site url..................................................passed
+And enter "test2" into email field..........................................passed
+Then click on login submit..................................................passed
+Then should prompt "Epic sadface: Password is required" as alert............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sauce Labs test case validations" name="verify when user tries to login with empty credentials should ask for username" time="6.327">
+        <system-out><![CDATA[Given navigate to site url..................................................passed
+When click on login submit..................................................passed
+Then should prompt "Epic sadface: Username is required" as alert............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sauce Labs test case validations" name="verify when user tries to login with invalid credentials should prompt as invalid credentials" time="11.614">
+        <system-out><![CDATA[Given navigate to site url..................................................passed
+And enter "test" into email field and "test" into password field............passed
+When click on login submit..................................................passed
+Then should prompt "Epic sadface: Username and password do not match any user in this service" as alert.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sauce Labs test case validations" name="verify when user tries to login with valid credentials, should redirect to user dashboard" time="4.586">
+        <system-out><![CDATA[Given navigate to site url..................................................passed
+And enter "standard_user" into email field and "secret_sauce" into password field.passed
+When click on login submit..................................................passed
+Then user should redirect to dashboard page.................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
